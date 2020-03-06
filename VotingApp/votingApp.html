@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Voting Page</title>
+</head>
+<body>
+  <h1>Which do you prefer, Coke or Pepsi?</h1>
+  <div>
+    <h2> Here is what other people are saying:</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th>Coke</th>
+        <th>Pepsi</th>
+      </tr>
+      <tr>
+        <th>Number of votes</th>
+        <td id = 'cokeVotes'>0</td>
+        <td id = 'pepsiVotes'>0</td>
+      </tr>
+    </table>
+    
+    <p id = 'numVotesP'> Total number of votes: 0</p>
+  </div>
+  
+  
+  <div id = 'selectionDiv'>
+    
+  <button onClick ='castVote(0)'>Coke</button>
+  <button onClick ='castVote(1)'>Pepsi</button>
+    
+  </div>
+
+  <div id = 'winnerDiv'>
+    <button onClick = 'announceWinner()'>Announce winner</button>
+    <p id = 'winnerP'> Winner is: Neither </p>
+  </div>
+</body>
+</html>
